@@ -187,4 +187,9 @@ header {
             border-top: 0 none;
             background: #1f6b9f;
             border-bottom: 1px solid #4397d3;
+            text-align: center;
           }
+      
+      #login, #logout {
+        text-transform: uppercase;
+      }
