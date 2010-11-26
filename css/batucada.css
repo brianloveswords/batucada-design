@@ -68,7 +68,6 @@ header {
     }
       #user-nav a {
         color: #fff;
-        font-weight: bold;
         font-size: 12px;
         text-decoration: none;
         display: block;
@@ -76,10 +75,15 @@ header {
         padding: 10px 12px;
       }
 
+      #user-nav .from {
+        font-weight: bold;
+      }
+      
       #user-nav a.top-level {
         height: 37px;
         line-height: 37px;
         padding: 0 12px;
+        font-weight: bold;
       }
 
       #user-nav a:hover {
@@ -132,13 +136,20 @@ header {
         .menu.open ul {
           position: absolute;
           display: block;
-          box-shadow: #666 2px 2px 6px;
-          -webkit-box-shadow: #666 2px 2px 6px;
-          -moz-box-shadow: #666 2px 2px 6px;
+          box-shadow: #777 2px 4px 6px;
+          -webkit-box-shadow: #777 2px 4px 6px;
+          -moz-box-shadow: #777 2px 4px 6px;
           behavior: url("/css/PIE.htc");
         }
           .menu.open a {
             border-top: 1px solid #76bae9;
             border-bottom: 1px solid #298ace;
             display: block;
+          }
+          #user.open ul a {
+            border: 0 none;
+          }
+          #user-actions {
+            border-top: 1px solid #76bae9;
+            min-width: 146px;
           }
