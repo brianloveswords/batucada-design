@@ -1,0 +1,4 @@
+* I started with Paul Irish's HTML5 boilerplate
+  http://html5boilerplate.com/
+
+* I'm using CSS3 PIE to get sweetness for IE6+
