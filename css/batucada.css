@@ -130,8 +130,8 @@ header {
       .menu.open {
         background: #48a4e3;
       }
-        .menu.open a.top-level {
-          border-bottom: 1px solid #298ace;
+        .menu.open a {
+          border-bottom: 1px solid #20699d;
         }
         .menu.open ul {
           position: absolute;
@@ -143,7 +143,6 @@ header {
         }
           .menu.open a {
             border-top: 1px solid #76bae9;
-            border-bottom: 1px solid #298ace;
             display: block;
           }
           #user.open ul a {
