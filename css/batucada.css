@@ -53,11 +53,59 @@ header {
           -o-border-radius: 6px;
           -webkit-border-radius: 6px;
         }
-        
+
         .no-rgba #main-nav a {
           background: #2d2d2d;
           border: 1px solid #1e1e1e;
           border-bottom: 1px solid #444;
           border-right: 1px solid #4444;
         }
-  
+    #user-nav {
+      position: relative;
+      top: -30px;
+      height: 37px;
+      float: right;
+    }
+      #user-nav a {
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+        height: 37px;
+        line-height: 37px;
+        text-decoration: none;
+        display: block;
+        padding: 0 12px;
+      }
+
+      #user-nav a:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+      .no-rgba a:hover {
+        background: url("/images/user-nav.bg.png");
+      }
+
+      #user-link {}
+
+        #user-picture {
+          position: relative;
+          top: 6px;
+          box-shadow: #000 -1px -1px 1px;
+          -moz-box-shadow: #000 -1px -1px 1px;
+          -webkit-box-shadow: #000 -1px -1px 1px;
+          behavior: url("/css/PIE.htc");
+        }
+
+        #user-name {
+          padding-left: 5px;
+        }
+
+      #user-nav ul {
+        list-style: none;
+      }
+      #user, #inbox, #logout {
+        float: left;
+        margin-left: 20px;
+      }
+      #user ul, #inbox ul {
+        display: none;
+      }
