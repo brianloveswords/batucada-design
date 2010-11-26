@@ -27,7 +27,7 @@
   <div id="container">
     <header>
       <div id="masthead">
-        <a id="logo">mozilla Drumbeat</a>
+        <a id="logo" class='ir' href="#">mozilla Drumbeat</a>
         <nav id="main-nav">
           <ul>
             <li><a href="#projects">Projects</a></li>
@@ -100,7 +100,21 @@
       
       
       <div id="breadcrumbs">
-      </div>
+        <nav>
+          <!-- dynamic:: navigation breadcrumbs -->
+          <a href="#">Projects</a>
+          <span class="arrow">&raquo;</span>
+          <a href="#">Featured Projects</a>
+          <span class="arrow">&raquo;</span>
+          <a href="#">Project Name</a>
+        </nav>
+
+        <div id="project-actions">
+          <a href="#">Edit Project</a>
+          <a href="#">Message Project Followers</a>
+        </div>
+      </div> <!-- /#breadcrumbs -->
+    
     </header>
     
     <div id="main">

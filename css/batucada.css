@@ -1,3 +1,23 @@
 header {
-  
 }
+  #masthead {
+    padding: 17px 20px 18px 20px;
+    height: 24px;
+    border-bottom: 1px solid #fff;
+    background: url("/images/masthead.bg.png") repeat-x;
+  }
+    #logo {
+      background-image: url("/images/logo.png");
+      height: 24px;
+      width: 213px;
+      float: left;
+      margin-right: 20px;
+    }
+    #main-nav {
+    }
+      #main-nav ul {
+      }
+        #main-nav ul li {
+          display: inline;
+        }
+  
