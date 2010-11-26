@@ -139,6 +139,12 @@ header {
           box-shadow: #777 2px 4px 6px;
           -webkit-box-shadow: #777 2px 4px 6px;
           -moz-box-shadow: #777 2px 4px 6px;
+          -webkit-border-bottom-right-radius: 7px;
+          -webkit-border-bottom-left-radius: 7px;
+          -moz-border-radius-bottomright: 7px;
+          -moz-border-radius-bottomleft: 7px;
+          border-bottom-right-radius: 7px;
+          border-bottom-left-radius: 7px;          
           behavior: url("/css/PIE.htc");
         }
           .menu.open a {
@@ -174,3 +180,11 @@ header {
           color: #fff;
           background: #d00;
         }
+        #inbox-messages {
+          padding-bottom: 7px;
+        }
+          #view-all a {
+            border-top: 0 none;
+            background: #1f6b9f;
+            border-bottom: 1px solid #4397d3;
+          }
