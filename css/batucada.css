@@ -1,3 +1,14 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+  background: -webkit-gradient(linear,0 top,0 bottom,from(#ddd),to(#fff));
+  background: -moz-linear-gradient(top,#ddd,#fff);
+  -pie-background: linear-gradient(top,#ddd,#fff);
+  min-height: 101%;
+  behavior: url("/css/PIE.htc");
+}
 header {
 }
   #masthead {
@@ -14,10 +25,39 @@ header {
       margin-right: 20px;
     }
     #main-nav {
+      font-size: 14px;
+      font-weight: bold;
     }
       #main-nav ul {
+        height: 24px;
       }
-        #main-nav ul li {
-          display: inline;
+        #main-nav li {
+          float: left;
+          margin-left: 20px;
+        }
+        #main-nav li:first-child {
+          margin-left: 0px;
+        }
+        #main-nav a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          height: 14px;
+          padding: 4px 10px 6px 10px;
+          background: rgba(0, 0, 0, 0.15);
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          border-right: 1px solid rgba(255, 255, 255, 0.15);
+          border-radius: 6px;
+          -moz-border-radius: 6px;
+          -o-border-radius: 6px;
+          -webkit-border-radius: 6px;
+        }
+        
+        .no-rgba #main-nav a {
+          background: rgb(45, 45, 45);
+          border: 1px solid rgb(30, 30, 30);
+          border-bottom: 1px solid rgb(68, 68, 68);
+          border-right: 1px solid rgb(68, 68, 68);
         }
   

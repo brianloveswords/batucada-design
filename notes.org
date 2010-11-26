@@ -2,3 +2,5 @@
   http://html5boilerplate.com/
 
 * I'm using CSS3 PIE to get sweetness for IE6+
+
+* Uses modernizer to provide fallbacks for IE.
