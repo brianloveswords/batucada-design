@@ -25,6 +25,7 @@ img.member-picture {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  behavior: url("/css/PIE.htc");
 }
 
 div.button {
