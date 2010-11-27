@@ -1,6 +1,12 @@
-* I started with Paul Irish's HTML5 boilerplate
+* Started with Paul Irish's HTML5 boilerplate
   http://html5boilerplate.com/
 
-* I'm using CSS3 PIE to get sweetness for IE6+
+* Pretty much everything is CSS, there are very few images
+** Using CSS3 PIE to get some box-shadow/border-radius sweetness for IE
+** Uses modernizer to provide fallbacks for IE, where necessary
 
-* Uses modernizer to provide fallbacks for IE.
+* I'm using two presentational (non-semantic) hacks
+  Search for "α" to find them.
+
+* There's some javascript at the bottom that was written for testing
+  you'll probably want to pull that out.
