@@ -116,10 +116,9 @@ header {}
       #user-nav ul {
         list-style: none;
       }
-      
-      #user-nav > ul > li {
-        float: left;
-      }
+        #user-nav > ul > li {
+          float: left;
+        }
       
       #user-nav .separator {
         width: 2px;
@@ -129,6 +128,8 @@ header {}
       }
       
       .menu ul {
+        position: absolute;
+        z-index: -10;
         display: none;
         margin: 0;
         padding: 0;
@@ -145,7 +146,7 @@ header {}
           border-bottom: 1px solid #20699d;
         }
         .menu.open ul {
-          position: absolute;
+          z-index: 1;
           display: block;
           box-shadow: #777 2px 4px 6px;
           -webkit-box-shadow: #777 2px 4px 6px;
@@ -193,6 +194,7 @@ header {}
         }
         #inbox-messages {
           padding-bottom: 7px;
+          max-width: 300px;
         }
           #view-all a {
             border-top: 0 none;
@@ -203,4 +205,18 @@ header {}
       
       #login, #logout {
         text-transform: uppercase;
+      }
+    
+  #breadcrumbs {
+    height: 31px;
+    border-bottom: 1px solid #ccc;
+    background: url("/images/breadcrumbs.bg.png") repeat-x;
+    font-size: 11px;
+    line-height: 31px;
+  }
+    #breadcrumbs nav{
+    }
+      #breadcrumbs nav a {
+        color: #2084ca;
+        text-decoration: none;
       }
