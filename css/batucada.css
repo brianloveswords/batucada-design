@@ -481,6 +481,7 @@ header {}
       font-size: 11px;
       font-weight: normal;
       padding: 1px 6px;
+      margin-bottom: 5px;
     }
     
     #create-post {
@@ -579,6 +580,12 @@ header {}
       margin: 0;
       padding: 0;
     }
+    #posts .clear{
+      width: 600px;
+      height: 1px;
+      line-height: 1px;
+    }
+    
     #posts .reply-to {
       display: none;
       float: right;
@@ -603,10 +610,18 @@ header {}
     #posts .post-contents {
       padding-left: 64px;
     }
-      #posts .post-details {
+      #posts .post-details, #posts .post-details a {
         color: #ababab;
       }
-      #posts .post-body, #posts .post-body p{
+      #posts .post-details a {
+        text-decoration: underline;
+      }
+      #posts .post-details a.member-name {
+        text-decoration: none;
+        color: #2084ca;
+      }
+      
+      #posts .post-body, #posts .post-body p {
         margin: 10px 0;
       }
           
