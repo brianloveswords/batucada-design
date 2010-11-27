@@ -9,8 +9,13 @@ body {
   min-height: 101%;
   behavior: url("/css/PIE.htc");
 }
-header {
+
+.container {
+  width: 1000px;
+  margin: auto;
 }
+
+header {}
   #masthead {
     padding: 17px 20px 18px 20px;
     height: 24px;

@@ -23,10 +23,9 @@
 </head>
 
 <body>
-
-  <div id="container">
-    <header>
-      <div id="masthead">
+  <header>
+    <div id="masthead">
+      <div class="container">
         <a id="logo" class='ir' href="#">mozilla Drumbeat</a>
         
         <nav id="main-nav">
@@ -36,95 +35,102 @@
             <li><a href="#events">Events</a></li>
           </ul>
         </nav>
-      
+        
         <!-- dynamic:: user related navigation -->
         <div id="user-nav">
           <ul>
             <li id="user" class="menu">
               <a href="#" id="user-link" class="top-level">
                 <img id="user-picture" src="/images/fake-user.png" height="19" width="19">
-                <span id="user-name">brianlovesthings</span>
-              </a>
-              <ul id="user-actions">
-                <li><a href="#">View Profile</a></li>
-                <li><a href="#">Donate!</a></li>
-                <li><a href="#">Settings</a></li>
-              </ul>
-            </li> <!-- /#user -->
+                  <span id="user-name">brianlovesthings</span>
+                </a>
+                <ul id="user-actions">
+                  <li><a href="#">View Profile</a></li>
+                  <li><a href="#">Donate!</a></li>
+                  <li><a href="#">Settings</a></li>
+                </ul>
+              </li> <!-- /#user -->
+              
+              <li class="separator ir">α</li>
+              
+              <!-- dynamic:: user messages -->
+              <li id="inbox" class="menu">
+                <a href="#" id="inbox-link" class="top-level">
+                  Inbox
+                  <!-- dymamic:: message count -->
+                  <span id="inbox-count" class="new-messages">200</span>
+                </a>
+                
+                <!-- dynamic:: message contents -->
+                <ul id="inbox-messages">
+                  <li class="message">
+                    <a href="#">
+                      <span class="from">username:</span>
+                      <span class="snippet">This is a part of the message...</span>
+                    </a>
+                  </li>
+                  
+                  <li class="message">
+                    <a href="#">
+                      <span class="from">username:</span>
+                      <span class="snippet">This is a part of the message...</span>
+                    </a>
+                  </li>
+                  
+                  <li class="message">
+                    <a href="#">
+                      <span class="from">username:</span>
+                      <span class="snippet">This is a part of the message...</span>
+                    </a>
+                  </li>
+                  
+                  <li id="view-all">
+                    <a href="#">View All Messages</a>
+                  </li>
+                  
+                </ul>
+              </li> <!-- /#inbox -->
+              
+              <li class="separator ir">α</li>
+              
+              <li id="logout">
+                <a href="#" class="top-level">Log Out</a>
+              </li>
+            </ul>
             
-            <li class="separator ir">α</li>
-            
-            <!-- dynamic:: user messages -->
-            <li id="inbox" class="menu open">
-              <a href="#" id="inbox-link" class="top-level">
-                Inbox
-                <!-- dymamic:: message count -->
-                <span id="inbox-count" class="new-messages">200</span>
-              </a>
-              
-              <!-- dynamic:: message contents -->
-              <ul id="inbox-messages">
-                <li class="message">
-                  <a href="#">
-                    <span class="from">username:</span>
-                    <span class="snippet">This is a part of the message...</span>
-                  </a>
-                </li>
-              
-                <li class="message">
-                  <a href="#">
-                    <span class="from">username:</span>
-                    <span class="snippet">This is a part of the message...</span>
-                  </a>
-                </li>
-              
-                <li class="message">
-                  <a href="#">
-                    <span class="from">username:</span>
-                    <span class="snippet">This is a part of the message...</span>
-                  </a>
-                </li>
-              
-                <li id="view-all">
-                  <a href="#">View All Messages</a>
-                </li>
-              
-              </ul>
-            </li> <!-- /#inbox -->
-            
-            <li class="separator ir">α</li>
-            
-            <li id="logout">
-              <a href="#" class="top-level">Log Out</a>
-            </li>
-          </ul>
-        
-        </div> <!-- /#user-nav -->
+          </div> <!-- /#user-nav -->
+        </div> <!-- /.container -->
       </div> <!-- /#masthead -->
       
       
       <div id="breadcrumbs">
-        <nav>
-          <!-- dynamic:: navigation breadcrumbs -->
-          <a href="#">Projects</a>
-          <span class="arrow">&raquo;</span>
-          <a href="#">Featured Projects</a>
-          <span class="arrow">&raquo;</span>
-          <a href="#">Project Name</a>
-        </nav>
+        <div class="container">  
+          <nav>
+            <!-- dynamic:: navigation breadcrumbs -->
+            <a href="#">Projects</a>
+            <span class="arrow">&raquo;</span>
+            <a href="#">Featured Projects</a>
+            <span class="arrow">&raquo;</span>
+            <a href="#">Project Name</a>
+          </nav>
 
-        <div id="project-actions">
-          <a href="#">Edit Project</a>
-          <a href="#">Message Project Followers</a>
+          <div id="project-actions">
+            <a href="#">Edit Project</a>
+            <a href="#">Message Project Followers</a>
+          </div>
         </div>
       </div> <!-- /#breadcrumbs -->
     
     </header>
     
     <div id="main">
+      <div class="container">
+      </div>
     </div>
     
     <footer>
+      <div class="container">
+      </div>
     </footer>
   </div> <!-- /#container -->
 
@@ -150,5 +156,12 @@
    })(document, 'script');
   </script>
   
+  <!-- test script for the top menus. you'll probably want to do something else for production. -->
+  <script>
+    (function(){
+      $('#user-nav').find('li.menu').bind('click', function(){$(this).toggleClass('open')});
+    })()
+  </script>
+
 </body>
 </html>
