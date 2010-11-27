@@ -3,9 +3,7 @@ html {
 }
 body {
   font-family: "Arial", "Helvetica", sans-serif;
-  background: -webkit-gradient(linear,0 top,0 bottom,from(#ddd),to(#fff));
-  background: -moz-linear-gradient(top,#ddd,#fff);
-  -pie-background: linear-gradient(top,#ddd,#fff);
+  background: #f3f4f6 url("/images/background.jpg") repeat-x right 50px;
   min-height: 101%;
   behavior: url("/css/PIE.htc");
 }
