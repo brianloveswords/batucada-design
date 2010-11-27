@@ -226,7 +226,7 @@
 
     <div id="main">
       
-      <div id="create-post" class="expanded">
+      <div id="create-post">
         <div class="post-container">
           <input type="text" value="Post a message to this project">
           <textarea></textarea>
@@ -292,10 +292,17 @@
    })(document, 'script');
   </script>
   
-  <!-- test scripts. you'll more than likely want to do something else for production. -->
+  <!-- test/example scripts.
+       these are hastily written just to give an idea of the user interaction.
+       you'll more than likely want to do something more robust for production. -->
   <script>
     (function(){
       $('#user-nav').find('li.menu').bind('click', function(){$(this).toggleClass('open')});
+      
+      $('#create-post').find('input').bind('focus', function(){
+        $('#create-post').addClass('expanded');
+        $('#create-post').find('textarea').trigger('focus');
+      })
       
       $('#create-post').find('textarea').bind('keydown', function(){
         var max = 750;
@@ -315,6 +322,13 @@
           counter.removeClass('warning');
         }
       })
+    
+      $('#create-post').find('textarea').bind('blur', function(){
+        if (jQuery.trim($(this).val()).length === 0) {
+          $('#create-post').removeClass('expanded');
+        }
+      })
+    
     })()
   </script>
 </body>

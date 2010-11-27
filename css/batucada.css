@@ -562,6 +562,10 @@ header {}
         #create-post.expanded textarea, #create-post.expanded .status-and-actions {
           display: block;
         }
+        #create-post.expanded textarea {
+          height: 160px;
+        }
+
         #create-post.expanded textarea:focus {
           outline: none;
           border: 1px solid #3ea1e6;
