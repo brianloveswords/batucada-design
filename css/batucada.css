@@ -60,6 +60,10 @@ header {}
     border-bottom: 1px solid #fff;
     background: url("/images/masthead.bg.png") repeat-x;
   }
+    #masthead a:hover {
+      text-decoration: none;
+    }
+     
     #logo {
       background-image: url("/images/logo.png");
       height: 24px;
@@ -232,6 +236,8 @@ header {}
           -o-border-radius: 6px;
           -webkit-border-radius: 6px;
           text-shadow: rgba(0, 0, 0, 0.40) -1px -1px 1px;
+          -moz-text-shadow: rgba(0, 0, 0, 0.40) -1px -1px 1px;
+          -webkit-text-shadow: rgba(0, 0, 0, 0.40) -1px -1px 1px;
           box-shadow: #444 1px 1px 2px;
           -webkit-box-shadow: #444 1px 1px 2px;
           -moz-box-shadow: #444 1px 1px 2px;
@@ -308,9 +314,32 @@ header {}
           line-height: 18px;
           margin-bottom: 12px;
         }
-      
-      
-
+      #project-icons img {
+        margin-right: 5px;
+        border: 1px solid #d0d0d0;
+      }
+      #project-description-link {
+        margin-top: 18px;
+        display: block;
+        line-height: 28px;
+        text-align: center;
+        background: #dfeffb;
+        text-shadow: #fff 1px 1px 0px;
+        -moz-text-shadow: #fff 1px 1px 0px;
+        -webkit-text-shadow: #fff 1px 1px 0px;
+        color: #2084ca;
+        font-weight: bold;
+      }
+      #project-description-link:hover {
+        color: #19679e;
+        text-decoration: none;
+      }
+      #project-description-link:active {
+        background: #ddd;
+        text-shadow: #fff -1px -1px 0px;
+        -moz-text-shadow: #fff -1px -1px 0px;
+        -webkit-text-shadow: #fff -1px -1px 0px;
+      }
   
   #main {
     margin-top: 40px;
