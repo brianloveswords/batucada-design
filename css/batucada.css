@@ -419,6 +419,48 @@ header {}
     padding-left: 340px;
     width: 620px;
   }
+    #main .post-container {
+      background: -webkit-gradient(linear,0 top,0 bottom,from(#fff),to(#f4f4f4));
+      background: -moz-linear-gradient(top,#fff,#f4f4f4);
+      -pie-background: linear-gradient(top,#fff,#f4f4f4);
+      border-radius: 6px;
+      -moz-border-radius: 6px;
+      -o-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      min-height: 56px;
+      margin: 10px 0;
+      border: 1px solid #c6c6c6;
+      border-bottom: 2px solid #c6c6c6;
+      behavior: url("/css/PIE.htc");
+      padding: 8px;
+    }
+    #create-post {
+    }
+      #create-post .post-container {
+        min-height: 46px;
+      }
+      
+      #create-post input {
+        width: 574px;
+        display: block;
+        font-size: 16px;
+        padding: 12px;
+        border: 1px solid #c6c6c6;
+        box-shadow: inset #ddd 0px 1px 4px;
+        -webkit-box-shadow: inset #ddd 0px 1px 4px;
+        -moz-box-shadow: inset #ddd 0px 1px 4px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -o-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        color: #999;
+        behavior: url("/css/PIE.htc");
+      }
+    #posts {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
           
  
 
