@@ -431,16 +431,65 @@ header {}
       margin: 10px 0;
       border: 1px solid #c6c6c6;
       border-bottom: 2px solid #c6c6c6;
-      behavior: url("/css/PIE.htc");
       padding: 8px;
+      behavior: url("/css/PIE.htc");
     }
+
+
+    #main .post-tags li, #main .post-char-count {
+      float: left;
+      background: #eee;
+      color: #919191;
+      border-radius: 6px;
+      -moz-border-radius: 6px;
+      -o-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      text-shadow: #fff 1px 1px 0px;
+      -moz-text-shadow: #fff 1px 1px 0px;
+      -webkit-text-shadow: #fff 1px 1px 0px;
+      box-shadow: #fff 1px 1px 2px;
+      -webkit-box-shadow: #fff 1px 1px 2px;
+      -moz-box-shadow: #fff 1px 1px 2px;
+      border: 1px solid #c6c6c6;
+      margin-right: 10px;
+      behavior: url("/css/PIE.htc");
+    }
+    
+    #main .post-char-count {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 1px 8px;
+    }
+    .no-textshadow #main .post-char-count {
+      color: #777;
+    }
+    #main .post-char-count.warning {
+      color: #555;
+    }
+    #main .post-char-count.danger {
+      color: #d00;
+    }
+  
+    #main .post-tags {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    #main .post-tags li {
+      line-height: 20px;
+      height: 20px;
+      font-size: 11px;
+      font-weight: normal;
+      padding: 1px 6px;
+    }
+    
     #create-post {
     }
       #create-post .post-container {
         min-height: 46px;
       }
       
-      #create-post input {
+      #create-post input, #create-post textarea {
         width: 574px;
         display: block;
         font-size: 16px;
@@ -456,6 +505,71 @@ header {}
         color: #999;
         behavior: url("/css/PIE.htc");
       }
+      #create-post textarea, #create-post .status-and-actions {
+        display: none;
+      }
+      #create-post .status-and-actions {
+        margin-top: 10px;
+        height: 28px;
+        text-align: right;
+      }
+        #create-post .update {
+          border: 1px solid #3a5568;
+          float: right;
+        }
+          #create-post .update, #create-post .update a {
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            behavior: url("/css/PIE.htc");
+          }
+          
+          #create-post .update a {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow: #000 0px -1px 0px;
+            -moz-text-shadow: #000 0px -1px 0px;
+            -webkit-text-shadow: #000 0px -1px 0px;
+            border: 1px solid #2571a6;
+            border-left: 1px solid #a3d3f4;
+            border-top: 1px solid #a3d3f4;
+            background: -webkit-gradient(linear,0 top,0 bottom,from(#3ea1e6),to(#2374ad));
+            background: -moz-linear-gradient(top,#3ea1e6,#2374ad);
+            -pie-background: linear-gradient(top,#3ea1e6,#2374ad);
+            padding: 3px 8px;
+            behavior: url("/css/PIE.htc");
+          }
+          #create-post .update:hover {
+            border: 1px solid #719ab7;
+          }
+          
+          #create-post .update a:active {
+            text-shadow: #000 0px 1px 0px;
+            -moz-text-shadow: #000 0px 1px 0px;
+            -webkit-text-shadow: #000 0px 1px 0px;
+            background: -webkit-gradient(linear,0 top,0 bottom,from(#2374ad),to(#3ea1e6));
+            background: -moz-linear-gradient(top,#2374ad,#3ea1e6);
+            -pie-background: linear-gradient(top,#2374ad,#3ea1e6);
+            behavior: url("/css/PIE.htc");
+          }
+      
+      #create-post.expanded {
+      }
+        #create-post.expanded input {
+          display: none;
+        }
+        #create-post.expanded textarea, #create-post.expanded .status-and-actions {
+          display: block;
+        }
+        #create-post.expanded textarea:focus {
+          outline: none;
+          border: 1px solid #3ea1e6;
+          box-shadow: inset #3ea1e6 0px 1px 4px;
+          -webkit-box-shadow: inset #3ea1e6 0px 1px 4px;
+          -moz-box-shadow: inset #3ea1e6 0px 1px 4px;
+        }
+    
     #posts {
       list-style: none;
       margin: 0;
