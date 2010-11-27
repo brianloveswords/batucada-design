@@ -17,6 +17,16 @@ h1 {
   font-size: 24px;
 }
 
+img.member-picture {
+  border: 1px solid #999;
+  box-shadow: #fff 1px 1px 1px;
+  -moz-box-shadow: #fff 1px 1px 1px;
+  -webkit-box-shadow: #fff 1px 1px 1px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
 div.button {
   display: block;
   border: 1px solid #c0c0c0;
@@ -291,7 +301,10 @@ header {}
     float: left;
     width: 300px;
   }
-    #project { }
+    #project {
+      border-bottom: 1px solid #f7f9fa;
+      margin-bottom: 50px;
+    }
       #project-follow {
         margin: 10px 0;
         width: 100px;
@@ -340,6 +353,65 @@ header {}
         -moz-text-shadow: #fff -1px -1px 0px;
         -webkit-text-shadow: #fff -1px -1px 0px;
       }
+      
+      #project-links {
+        margin: 20px 0;
+        border-top: 1px solid #cfd1d2;
+        border-bottom: 1px solid #f7f9fa;
+      }
+        #project-links ul {
+          padding: 15px 0;
+          border-top: 1px solid #f7f9fa;
+          border-bottom: 1px solid #cfd1d2;
+        }
+          #project-links a {
+            line-height: 24px;
+            padding-left: 20px;
+            background: url("/images/link-indicator.png") no-repeat left -1px;
+            margin: 5px 0;
+          }
+      
+      #project-lead {
+        border-bottom: 1px solid #cfd1d2;
+        padding-bottom: 15px;
+      }
+        #project-lead .member-picture {
+          float: left;
+          
+        }
+        #project-lead .member-details {
+          padding-left: 67px;
+          min-height: 120px;
+        }
+        
+        #project-lead .member-name a {
+          font-size: 16px;
+          text-shadow: #fff 1px 1px 0px;
+          -moz-text-shadow: #fff 1px 1px 0px;
+          -webkit-text-shadow: #fff 1px 1px 0px;
+        }
+        
+        #project-lead .member-actions {
+          margin-top: 5px;
+          height: 24px;
+        }
+          #project-lead .member-actions .button {
+            float: left;
+            margin-right: 6px;
+          }
+        #project-lead .member-bio {
+          margin-top: 12px;
+        }
+          #project-lead .member-bio p {
+            font-size: 12px;
+            line-height: 18px;
+            text-shadow: #fff 1px 1px 0px;
+            -moz-text-shadow: #fff 1px 1px 0px;
+            -webkit-text-shadow: #fff 1px 1px 0px;
+          }
+
+     
+       
   
   #main {
     margin-top: 40px;
