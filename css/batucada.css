@@ -111,12 +111,18 @@ header {
       #user-nav ul {
         list-style: none;
       }
-
-      #user, #inbox, #logout {
+      
+      #user-nav > ul > li {
         float: left;
-        margin-left: 20px;
       }
-
+      
+      #user-nav .separator {
+        width: 2px;
+        margin: 0 5px 0 3px;
+        background: url("/images/separator.bg.png") no-repeat left center;
+        height: 37px;
+      }
+      
       .menu ul {
         display: none;
         margin: 0;
